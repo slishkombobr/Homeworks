@@ -1,14 +1,12 @@
-def test():
-    a = 52
-    b = 13
-    print(a, b)
+from fake_math import divide as FM
+from true_math import divide as TM
 
-def test2(name, age, city):
-    print(name, age, city)
-
-
-
-
-test()
-test2('Sveta', 28, 'Moscow')
+result1 = FM(21, 3)
+result2 = FM(3, 0)
+result3 = TM(15, 5)
+result4 = TM(15, 0)
+print(result1)
+print(result2)
+print(result3)
+print(result4)
 
